@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Repeater compile
-      run: g++ -O3 intention_repeater_max_5.7.cpp
+      run: g++ -O3 intentionRepeater.cpp
     - name: Make swap
       run: (sudo fallocate -l 14G /swapfile) && (sudo chmod 600 /swapfile) && (sudo mkswap /swapfile) && (sudo swapon /swapfile)
     - name: Repeater run
