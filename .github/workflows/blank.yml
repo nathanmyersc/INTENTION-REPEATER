@@ -21,7 +21,7 @@ jobs:
     - name: Make swap
       run: (sudo fallocate -l 14G /swapfile) && (sudo chmod 600 /swapfile) && (sudo mkswap /swapfile) && (sudo swapon /swapfile)
     - name: Repeater run
-      run: ./a.out --dur 05:59:00 --imem 20 --intent "INTENTIONS.txt"
+      run: ./a.out --dur 06:00:00 --imem 20 --intent "INTENTIONS.txt"
 
           echo Add other actions to build,
           echo test, and deploy your project.
